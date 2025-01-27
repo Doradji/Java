@@ -3,7 +3,7 @@ package repeat1.method;
 public class MethodCasting1 {
 
     public static void main(String[] args) {
-        double number = repeat1.5;
+        double number = 1.5;
         //printNumber(number);
         printNumber((int) number);
     }
