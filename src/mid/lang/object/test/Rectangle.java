@@ -23,4 +23,6 @@ public class Rectangle {
         Rectangle rectangle = (Rectangle) o;
         return width == rectangle.width && height == rectangle.height;
     }
+
+
 }
