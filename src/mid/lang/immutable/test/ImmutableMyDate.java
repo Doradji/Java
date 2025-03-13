@@ -11,16 +11,16 @@ public class ImmutableMyDate {
         this.day = day;
     }
 
-    public ImmutableMyDate setYear(int year) {
-        return new ImmutableMyDate(year, this.month, this.day);
+    public ImmutableMyDate withYear(int newYear) {
+        return new ImmutableMyDate(newYear, this.month, this.day);
     }
 
-    public ImmutableMyDate setMonth(int month) {
-        return new ImmutableMyDate(this.year, month, this.day);
+    public ImmutableMyDate withMonth(int newMonth) {
+        return new ImmutableMyDate(this.year, newMonth, this.day);
     }
 
-    public ImmutableMyDate setDay(int day) {
-        return new ImmutableMyDate(this.year, this.month, day);
+    public ImmutableMyDate withtDay(int newDay) {
+        return new ImmutableMyDate(this.year, this.month, newDay);
     }
 
     @Override
