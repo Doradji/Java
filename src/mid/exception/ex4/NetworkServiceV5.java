@@ -2,7 +2,7 @@ package mid.exception.ex4;
 
 public class NetworkServiceV5 {
 
-    public void sendMessage(String data) {
+    public void sendMessage(String data) throws Exception {
         String address = "https://example.com";
 
         try(NetworkClientV5 client = new NetworkClientV5(address)){
