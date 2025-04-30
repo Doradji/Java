@@ -1,4 +1,4 @@
-package mid.time.LocalTime;
+package mid.time;
 
 import java.time.LocalTime;
 
