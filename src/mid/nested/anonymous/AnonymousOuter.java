@@ -14,9 +14,19 @@ public class AnonymousOuter {
 
             @Override
             public void print() {
-                System.out.println("value = " + value);
-
+                System.out.println("value=" + value);
+                System.out.println("localVar=" + localVar);
+                System.out.println("paramVar=" + paramVar);
+                System.out.println("outInstanceVar=" + outInstanceVar);
             }
-        }
+        };
+
+        printer.print();
+        System.out.println("printer.class = " + printer.getClass());
+    }
+
+    public static void main(String[] args) {
+        AnonymousOuter outer = new AnonymousOuter();
+        outer.process(2);
     }
 }
